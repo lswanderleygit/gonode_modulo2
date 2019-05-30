@@ -16,5 +16,8 @@
     "eslint-plugin-standard": "^4.0.0",
     "nodemon": "^1.19.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.0"
+  }
 }
