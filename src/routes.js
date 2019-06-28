@@ -19,6 +19,8 @@ routes.post('/signup', upload.single('avatar'), UserController.store)
 // todas as rotas que iniciem com /app vão passar pelo middleware
 routes.use('/app', authMiddleware)
 
+routes.get('/app/logout', SessionController.destroy)
+
 routes.get('/app/dashboard', (req, res) => {
   console.log(req.session.user)
   return res.render('dashboard')
