@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const Appointment = sequelize.define('Appointment', {
-    data: DataTypes.DATE
+    date: DataTypes.DATE
   })
 
   // pertence a um usuário = user_id e é prestado por outro usuário = provider_id
